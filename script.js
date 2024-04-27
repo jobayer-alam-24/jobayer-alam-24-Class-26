@@ -135,4 +135,4 @@ console.log(ascend([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 40]));
 function descend(array){
     return array.sort((a, b) => b - a);
 }
-console.log(descend([1232, 432, 2523, 5325, 512124, 12]))
+console.log(descend([1232, 432, 2523, 5325, 512124, 12]));
