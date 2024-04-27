@@ -113,4 +113,20 @@ for(let i of nestedArray){
         }
     }
 }
+// last element of array 
+let array = [2, 3, 5, 7, 11, 13, 17];
+console.log(array.join(', '));
+let lastElement = `Last Element: ${array[array.length - 1]}`;
+console.log(lastElement);
   
+// sorting 
+let arraySort = ["zoom", "boxer", "eat", "car", "apple", "dog"];
+console.log(arraySort.join(', '));
+arraySort.sort();
+console.log(`After sorting alphabetically: ${arraySort.join(", ")}`);
+
+// ascending order 
+function ascend(arrayCaught){
+    return arrayCaught.sort((a, b) => a - b)
+}
+console.log(ascend([10, 9, 8, 7, 6, 5, 4, 3, 2, 1, 40]));
