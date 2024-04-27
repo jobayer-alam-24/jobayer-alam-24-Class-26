@@ -81,3 +81,36 @@ let myObj = function(){
     }
 }
 myObj();
+
+// e. random problems--
+const anisulIslam = {
+    fname: "Anisul",
+    lname: "Islam",
+    age: 33,
+    place: "Finland",
+    carName: "Mercedes",
+
+    fullName: function(){
+        return this.fname + " " + this.lname;
+    },
+    driving: function(){
+        return `${this.fullName()} is driving ${this.carName}. He studied in ${this.place}`;
+    }
+}
+console.log(anisulIslam);
+console.log(`${anisulIslam.fullName()} is ${anisulIslam.age} years old`);
+console.log(anisulIslam.fullName());
+console.log(anisulIslam.driving());
+
+let nestedArray = [[[[1, 2],[3, 4]],[[5, 6],[7, 8]]],[[[9, 10],[11, 12]],[[13, 14],[15, 16]]]];
+console.log(nestedArray);
+for(let i of nestedArray){
+    for(let j of i){
+        for(let k of j){
+            for(let l of k){
+                console.log(l);
+            }
+        }
+    }
+}
+  
