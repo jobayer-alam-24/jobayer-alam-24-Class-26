@@ -50,7 +50,23 @@ let sumOfTwoDArray = function(){
         [24, 46, 68, 3], 
         [13, 35, 57, 7]  
     ];
-
+    const friendsName = [
+        ["Rahim", "karim", "Lila", "Shila"],
+        ["Rahim", "karim", "Lila", "Shila"],
+        ["Rahim", "karim", "Lila", "Shila"],
+        ["Rahim", "karim", "Lila", "Shila"],
+    ];
+    for(let i = 0; i<friendsName.length; i++){
+        for(let j = 0; j<friendsName.length; j++){
+            if(friendsName[i][j] === "Shila"){
+                console.log("Got her...")
+            }
+            else{
+                console.log("not found!")
+            }
+        }
+    }
+  
     console.log("Array 1:")
     for(let i of myArray1){
         console.log(i.join(' '))
